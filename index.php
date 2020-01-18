@@ -4,19 +4,17 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <title>Hello, AMPs</title>
     <link rel="canonical" href="/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     <style amp-custom>
-      <?php //include_once('./css/style.css'); ?>
-      <?php //include_once('./css/menu-2018.css'); ?>
-      <?php //include_once('./css/homepage-2018.css'); ?>
+      <?php include_once('./css/style.css'); ?>
+      <?php include_once('./css/menu-2018.css'); ?>
+      <?php include_once('./css/homepage-2018.css'); ?>
     </style>
-  <link rel="stylesheet" href="/scss/style.css">
-  <link rel="stylesheet" href="/scss/menu-2018.css">
-  <link rel="stylesheet" href="/scss/homepage-2018.css">
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -47,11 +45,6 @@
       <symbol id="gfx-arrow-right-svg" viewBox="0 0 558 1000">
         <path d="M209.6 1000l348.2-500L209.6 0H0l348.1 500L0 1000h209.6z" /> </symbol>
       <symbol id="gfx-wt-news" viewBox="0 0 820 170">
-        <style>
-          .st2 {
-            fill: #0073a2
-          }
-        </style>
         <g id="logo">
           <path id="bg_white" d="M133.6 124.7l-52.7 30.8c-3.1 1.8-7 1.8-10.1 0L18 124.7c-3.1-1.8-5-5.1-5-8.7V54.2c0-3.6 1.9-6.9 5-8.7l52.7-30.8c3.1-1.8 7-1.8 10.1 0l52.7 30.8c3.1 1.8 5 5.1 5 8.7V116c.1 3.6-1.8 6.9-4.9 8.7z" fill="#fff" />
           <path id="outline" d="M75.8 159.9c-2.3 0-4.6-.6-6.6-1.8l-52.7-30.8c-4-2.3-6.5-6.7-6.5-11.3V54.2c0-4.6 2.5-9 6.5-11.3l52.7-30.8a13 13 0 0 1 13.2 0l52.7 30.8c4 2.3 6.5 6.7 6.5 11.3V116c0 4.6-2.5 9-6.5 11.3l-52.7 30.8c-2 1.2-4.3 1.8-6.6 1.8zm0-143.6c-1.2 0-2.5.3-3.5 1L19.5 48.1c-2.1 1.3-3.5 3.6-3.5 6.1V116c0 2.5 1.3 4.8 3.5 6.1l52.7 30.8c2.2 1.3 4.9 1.3 7.1 0l52.7-30.8c2.1-1.3 3.5-3.6 3.5-6.1V54.2c0-2.5-1.3-4.8-3.5-6.1L79.4 17.3c-1.1-.7-2.4-1-3.6-1z" />
@@ -70,16 +63,9 @@
     <header class="site-header">
       <div class="container-fluid">
         <a href="/" class="logo pull-left">
-          <amp-img src="/images/wt-logo-split-reverse-640x120.svg" alt="" width="320" height="60" width="auto">
+          <amp-img src="/images/wt-logo-split-reverse-640x120.svg" alt="" width="320" height="60">
         </a>
         <!-- Navigation here -->
-        <style>
-          @media screen and (max-width: 767px) {
-            .nav-2018 {
-              display: none;
-            }
-          }
-        </style>
         <nav id="main-nav-2018" class="nav-2018">
           <ul class="user-menu">
             <li class="menu-item"><a href="/login-member" class="text-primary">Sign in</a></li>
@@ -156,7 +142,7 @@
       </div>
       <div class="header-search">
         <div class="container-fluid">
-          <form role="search" method="get" novalidate action="https://www.warriortrading.com/">
+          <form target="_top" role="search" method="get" novalidate action="https://www.warriortrading.com/">
             <input type="search" class="search-field" placeholder="Search" value="" name="s" autofocus="autofocus" />
             <button type="submit"></button>
           </form>
@@ -175,7 +161,7 @@
               </div>
             </div>
             <div class="elegance-content-progress">
-              <form class="elegance-form" id="registerWebinar">
+              <form action="/" target="_top" class="elegance-form" id="registerWebinar">
                 <div class="el-step-1">
                   <p class="elegance-title">Select a date and time for <span>your webinar</span></p>
                   <p class="elegance-select-wrap">
@@ -213,9 +199,15 @@
     <section class="video-section">
       <div class="video-spacer"></div>
       <div class="video-wrapper">
-        <video class="video-source" muted="" autoplay="" loop="" playsinline="" poster="https://media.warriortrading.com/2018/07/video-placeholder.jpg">
+        <!-- <video class="video-source" muted="" autoplay="" loop="" playsinline="" poster="https://media.warriortrading.com/2018/07/video-placeholder.jpg">
           <source src="https://media.warriortrading.com/2019/03/wt-bg_2_480p30.mp4" type="video/mp4"> Your browser does not support the video tag.
-        </video>
+        </video> -->
+        <amp-video width="720" height="480" layout="responsive">
+          <source src="https://media.warriortrading.com/2019/03/wt-bg_2_480p30.mp4" type="video/mp4"> Your browser does not support the video tag.
+        </amp-video>
+
+
+
       </div>
       <div class="video-overlay">
         <div class="top-section">
@@ -387,21 +379,21 @@
 
     <section class="products-section">
       <div class="product-container">
-        <div class="product-photo"><amp-img src="/images/gfx-panel-chat1.png"></div>
+        <div class="product-photo"><amp-img src="/images/gfx-panel-chat1.png" width="600" height="400" layout="responsive"></div>
         <h2 class="product-name">Chat Room</h2>
         <div class="product-copy">A live chat room that features watch lists, live trades, market commentary, recaps, and Q &amp; A.</div>
         <div class="product-button"><a href="/day-trading-chat-room/">Learn more</a>
         </div>
       </div>
       <div class="product-container">
-        <div class="product-photo"><amp-img src="/images/gfx-panel-starter1.png"></div>
+        <div class="product-photo"><amp-img src="/images/gfx-panel-starter1.png" width="600" height="400" layout="responsive"></div>
         <h2 class="product-name">Warrior Starter</h2>
         <div class="product-copy">The starting point for beginners to discover the Warrior Trading system.</div>
         <div class="product-button"><a href="/warrior-starter-info/">Learn more</a>
         </div>
       </div>
       <div class="product-container">
-        <div class="product-photo"><amp-img src="/images/gfx-panel-pro1.png"></div>
+        <div class="product-photo"><amp-img src="/images/gfx-panel-pro1.png" width="600" height="400" layout="responsive"></div>
         <h2 class="product-name">Warrior Pro</h2>
         <div class="product-copy">Our complete trading system that creates successful traders.</div>
         <div class="product-button"><a href="/warrior-pro-info/">Learn more</a></div>
@@ -412,40 +404,48 @@
     <section class="socials text-center">
       <div class="container">
         <div class="row-inline">
-          <div class="col-sm-3-inline col-xs-6-inline">
+          <div class="g-inline">
             <div class="media text-left">
               <div class="media-left">
-                <a href="https://www.youtube.com/user/DaytradeWarrior?sub_confirmation=1" target="_blank"><amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-yt.svg" alt=""></a>
+                <a href="https://www.youtube.com/user/DaytradeWarrior?sub_confirmation=1" target="_blank">
+                  <amp-img src="/images/s-yt.svg" alt="" width="45" height="32" layout="fixed">
+                </a>
               </div>
               <div class="media-right">
                 <a href="https://www.youtube.com/user/DaytradeWarrior?sub_confirmation=1" target="_blank">427K<small>subscribers</small></a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3-inline col-xs-6-inline">
+          <div class="g-inline">
             <div class="media text-left">
               <div class="media-left">
-                <a href="https://www.facebook.com/warriortrading/" target="_blank"><amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-fb.svg" alt=""></a>
+                <a href="https://www.facebook.com/warriortrading/" target="_blank">
+                  <amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-fb.svg" alt="" width="20" height="36" layout="fixed">
+                </a>
               </div>
               <div class="media-right">
                 <a href="https://www.facebook.com/warriortrading/" target="_blank">183K<small>page likes</small></a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3-inline col-xs-6-inline">
+          <div class="g-inline">
             <div class="media text-left">
               <div class="media-left">
-                <a href="https://twitter.com/daytradewarrior" target="_blank"><amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-tw.svg" alt=""></a>
+                <a href="https://twitter.com/daytradewarrior" target="_blank">
+                  <amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-tw.svg" alt="" width="42" height="35" layout="fixed">
+                </a>
               </div>
               <div class="media-right">
                 <a href="https://twitter.com/daytradewarrior" target="_blank">272K<small>followers</small></a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3-inline col-xs-6-inline">
+          <div class="g-inline">
             <div class="media text-left">
               <div class="media-left">
-                <a href="https://www.instagram.com/warriortrading/" target="_blank"><amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-inst.svg" alt=""></a>
+                <a href="https://www.instagram.com/warriortrading/" target="_blank">
+                  <amp-img src="https://cdn.warriortrading.com/warriortrading.com/gatsby/media/s-inst.svg" alt="" width="37" height="37" layout="fixed">
+                </a>
               </div>
               <div class="media-right">
                 <a href="https://www.instagram.com/warriortrading/" target="_blank">44.3K<small>followers</small></a>
@@ -632,7 +632,7 @@
 
 
     
-
+    <!-- 
     <script>
       jQuery(document).ready(function($) {
         $('button.btn-webinar').click(function() {
@@ -641,8 +641,10 @@
         });
       });
     </script>
+    -->
 
     <!-- Webinar Optin form script -->
+    <!--
     <script>
       jQuery(document).ready(function($) {
         // $('#myModal').modal('show');
@@ -727,6 +729,7 @@
         document.getElementById('timezone').value = offset;
       });
     </script>
+    -->
     <!-- End Webinar Optin form script -->
   </body>
 </html>
