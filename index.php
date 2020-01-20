@@ -5,7 +5,10 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-    <title>Hello, AMPs</title>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+    <title>Warrior Trading | Momentum Day Trading Courses &amp; Day Trading Strategies</title>
     <link rel="canonical" href="/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -13,10 +16,25 @@
       <?php include_once('./css/style.css'); ?>
       <?php include_once('./css/menu-2018.css'); ?>
       <?php include_once('./css/homepage-2018.css'); ?>
+      <?php include_once('./css/responsive.css'); ?>
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+    <amp-state id="headerSearch">
+      <script type="application/json">
+        {
+          "show": {
+            "style" : "menu-search"
+          },
+          "hide": {
+            "style" : ""
+          }
+        }
+      </script>
+    </amp-state>
   </head>
-  <body>
+  <body id="body-2018" [class]="headerSearch[headerSearchCurrentState].style">
     <!-- Google Tag Manager (noscript) -->
     <!-- <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3F88" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -63,7 +81,7 @@
     <header class="site-header">
       <div class="container-fluid">
         <a href="/" class="logo pull-left">
-          <amp-img src="/images/wt-logo-split-reverse-640x120.svg" alt="" width="320" height="60">
+          <amp-img class="logo" src="/images/wt-logo-split-reverse-640x120.svg" alt="" width="320" height="60">
         </a>
         <!-- Navigation here -->
         <nav id="main-nav-2018" class="nav-2018">
@@ -125,7 +143,8 @@
         </nav>
         <ul class="right-nav pull-right clearfix">
           <li>
-            <button class="btn-search"></button>
+            <button class="btn-search show" on="tap:AMP.setState({headerSearchCurrentState: 'show'})"></button>
+            <button class="btn-search hide" on="tap:AMP.setState({headerSearchCurrentState: 'hide'})"></button>
           </li>
           <li class="btn-user">
             <a class="icon">
@@ -140,7 +159,7 @@
           <button id="button-menu" class="btn-menu"><span id="button-middle"></span></button>
         </ul>
       </div>
-      <div class="header-search">
+      <div id="header-search" class="header-search">
         <div class="container-fluid">
           <form target="_top" role="search" method="get" novalidate action="https://www.warriortrading.com/">
             <input type="search" class="search-field" placeholder="Search" value="" name="s" autofocus="autofocus" />
@@ -202,7 +221,7 @@
         <!-- <video class="video-source" muted="" autoplay="" loop="" playsinline="" poster="https://media.warriortrading.com/2018/07/video-placeholder.jpg">
           <source src="https://media.warriortrading.com/2019/03/wt-bg_2_480p30.mp4" type="video/mp4"> Your browser does not support the video tag.
         </video> -->
-        <amp-video width="720" height="480" layout="responsive">
+        <amp-video class="video-source" width="720" height="480" layout="responsive" autoplay>
           <source src="https://media.warriortrading.com/2019/03/wt-bg_2_480p30.mp4" type="video/mp4"> Your browser does not support the video tag.
         </amp-video>
 
@@ -458,91 +477,93 @@
 
     <section class="testimonials-section">
       <div class="testimonials-slider home-container">
-        <div class="testimonial-container" style="width: 100%; display: inline-block;">
-          <div class="testimonial-inner-container">
-            <div class="testimonial-panel1">
-              <div class="testimonial-gfx-quote">
-                <svg class="gfx-quote">
-                  <use xlink:href="#gfx-quote-svg"></use>
-                </svg>
+        <amp-carousel layout="responsive" width="1040" height="460" type="slides" >
+          <div class="testimonial-container slide">
+            <div class="testimonial-inner-container">
+              <div class="testimonial-panel1">
+                <div class="testimonial-gfx-quote">
+                  <svg class="gfx-quote">
+                    <use xlink:href="#gfx-quote-svg"></use>
+                  </svg>
+                </div>
+                <div class="testimonial-text-large">Before I started trading, I would make $1000 in 2 weeks...</div>
               </div>
-              <div class="testimonial-text-large">Before I started trading, I would make $1000 in 2 weeks...</div>
-            </div>
-            <div class="testimonial-panel2">
-              <div class="testimonial-text-small">Now after taking the warrior trading course, I can make that in a single day, at 26, I now own my own house and I am fully independent, thank you warrior trading for everything you have done for me, my future looks brighter than ever!</div>
-              <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_max-1.png" width="110" height="31"></div>
-              <div class="testimonial-location">UK</div>
+              <div class="testimonial-panel2">
+                <div class="testimonial-text-small">Now after taking the warrior trading course, I can make that in a single day, at 26, I now own my own house and I am fully independent, thank you warrior trading for everything you have done for me, my future looks brighter than ever!</div>
+                <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_max-1.png" width="110" height="31"></div>
+                <div class="testimonial-location">UK</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-container" style="width: 100%; display: inline-block;">
-          <div class="testimonial-inner-container">
-            <div class="testimonial-panel1">
-              <div class="testimonial-gfx-quote">
-                <svg class="gfx-quote">
-                  <use xlink:href="#gfx-quote-svg"></use>
-                </svg>
+          <div class="testimonial-container slide">
+            <div class="testimonial-inner-container">
+              <div class="testimonial-panel1">
+                <div class="testimonial-gfx-quote">
+                  <svg class="gfx-quote">
+                    <use xlink:href="#gfx-quote-svg"></use>
+                  </svg>
+                </div>
+                <div class="testimonial-text-large">I had a job I didn't really like and I was forced to live five thousand miles away from my home Country...</div>
               </div>
-              <div class="testimonial-text-large">I had a job I didn't really like and I was forced to live five thousand miles away from my home Country...</div>
-            </div>
-            <div class="testimonial-panel2">
-              <div class="testimonial-text-small">After joining Warrior Trading, I can trade from anywhere and my income is more than doubled. Thanks to this community, it now feels like I've been given the keys to absolute freedom.</div>
-              <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_roberto-1.png" width="110" height="31"></div>
-              <div class="testimonial-location">Italy</div>
+              <div class="testimonial-panel2">
+                <div class="testimonial-text-small">After joining Warrior Trading, I can trade from anywhere and my income is more than doubled. Thanks to this community, it now feels like I've been given the keys to absolute freedom.</div>
+                <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_roberto-1.png" width="110" height="31"></div>
+                <div class="testimonial-location">Italy</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-container" style="width: 100%; display: inline-block;">
-          <div class="testimonial-inner-container">
-            <div class="testimonial-panel1">
-              <div class="testimonial-gfx-quote">
-                <svg class="gfx-quote">
-                  <use xlink:href="#gfx-quote-svg"></use>
-                </svg>
+          <div class="testimonial-container slide">
+            <div class="testimonial-inner-container">
+              <div class="testimonial-panel1">
+                <div class="testimonial-gfx-quote">
+                  <svg class="gfx-quote">
+                    <use xlink:href="#gfx-quote-svg"></use>
+                  </svg>
+                </div>
+                <div class="testimonial-text-large">After 3 years of trading as a student my portfolio has net more than $230k...</div>
               </div>
-              <div class="testimonial-text-large">After 3 years of trading as a student my portfolio has net more than $230k...</div>
-            </div>
-            <div class="testimonial-panel2">
-              <div class="testimonial-text-small">For year 2019, in less than 6 months I’ve net more than 140k. With Warrior Trading’s mentorship and my investment knowledge prior to coming on-board, I developed my own short term swing trading strategy.</div>
-              <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_drew.png" width="110" height="31"></div>
-              <div class="testimonial-location">Washington DC</div>
+              <div class="testimonial-panel2">
+                <div class="testimonial-text-small">For year 2019, in less than 6 months I’ve net more than 140k. With Warrior Trading’s mentorship and my investment knowledge prior to coming on-board, I developed my own short term swing trading strategy.</div>
+                <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_drew.png" width="110" height="31"></div>
+                <div class="testimonial-location">Washington DC</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-container" style="width: 100%; display: inline-block;">
-          <div class="testimonial-inner-container">
-            <div class="testimonial-panel1">
-              <div class="testimonial-gfx-quote">
-                <svg class="gfx-quote">
-                  <use xlink:href="#gfx-quote-svg"></use>
-                </svg>
+          <div class="testimonial-container slide">
+            <div class="testimonial-inner-container">
+              <div class="testimonial-panel1">
+                <div class="testimonial-gfx-quote">
+                  <svg class="gfx-quote">
+                    <use xlink:href="#gfx-quote-svg"></use>
+                  </svg>
+                </div>
+                <div class="testimonial-text-large">On January 24th 2019 I started with $690 in my account...</div>
               </div>
-              <div class="testimonial-text-large">On January 24th 2019 I started with $690 in my account...</div>
-            </div>
-            <div class="testimonial-panel2">
-              <div class="testimonial-text-small">In March I made $4,433.89 and by April, my account was up 1,000%. I’d made $6,900 in 42 trading days.</div>
-              <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_petr.png" width="110" height="31"></div>
-              <div class="testimonial-location">Czech Republic</div>
+              <div class="testimonial-panel2">
+                <div class="testimonial-text-small">In March I made $4,433.89 and by April, my account was up 1,000%. I’d made $6,900 in 42 trading days.</div>
+                <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_petr.png" width="110" height="31"></div>
+                <div class="testimonial-location">Czech Republic</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testimonial-container" style="width: 100%; display: inline-block;">
-          <div class="testimonial-inner-container">
-            <div class="testimonial-panel1">
-              <div class="testimonial-gfx-quote">
-                <svg class="gfx-quote">
-                  <use xlink:href="#gfx-quote-svg"></use>
-                </svg>
+          <div class="testimonial-container slide">
+            <div class="testimonial-inner-container">
+              <div class="testimonial-panel1">
+                <div class="testimonial-gfx-quote">
+                  <svg class="gfx-quote">
+                    <use xlink:href="#gfx-quote-svg"></use>
+                  </svg>
+                </div>
+                <div class="testimonial-text-large">I think trading is the only place in life where I can say I am totally responsible for my outcomes...</div>
               </div>
-              <div class="testimonial-text-large">I think trading is the only place in life where I can say I am totally responsible for my outcomes...</div>
-            </div>
-            <div class="testimonial-panel2">
-              <div class="testimonial-text-small">That’s huge in a world where previously waiting on someone else to make decisions about my income felt like a prison. I now have full autonomy.</div>
-              <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_celena.png" width="110" height="31"></div>
-              <div class="testimonial-location">Georgia, USA</div>
+              <div class="testimonial-panel2">
+                <div class="testimonial-text-small">That’s huge in a world where previously waiting on someone else to make decisions about my income felt like a prison. I now have full autonomy.</div>
+                <div class="testimonial-name"><amp-img src="https://media.warriortrading.com/2019/09/Signatues_celena.png" width="110" height="31"></div>
+                <div class="testimonial-location">Georgia, USA</div>
+              </div>
             </div>
           </div>
-        </div>
+        </amp-carousel>
       </div>
       <div class="arrow-navigation">
         <div class="slider-left-arrow slick-arrow" style="display: block;">

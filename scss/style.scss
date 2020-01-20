@@ -1,3 +1,90 @@
+/* FONTS  */
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v2/jizDREVItHgc8qDIbSTKq4XkRiUf2zcZiVbJ.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Libre Franklin SemiBold'), local('LibreFranklin-SemiBold'), url(https://fonts.gstatic.com/s/librefranklin/v2/jizAREVItHgc8qDIbSTKq4XkRi3A_yI0q1vjitOh.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v14/rax8HiqOu8IVPmn7f4xpLjpSmw.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  /* font-display: swap; */
+  src: local('Bitter Bold'), local('Bitter-Bold'), url(https://fonts.gstatic.com/s/bitter/v14/rax_HiqOu8IVPmnzxKl8AxhfsUjQ8Q.woff2) format('woff2');
+}
+
+
+@font-face {
+  font-family: 'geomanistlight';
+  src: url('../fonts/geomanist-light-webfont.eot');
+  src: url('../fonts/geomanist-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-light-webfont.woff2') format('woff2'), url('../fonts/geomanist-light-webfont.woff') format('woff'), url('../fonts/geomanist-light-webfont.ttf') format('truetype'), url('../fonts/geomanist-light-webfont.svg#glyphicons_halflingsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'geomanist_regularregular';
+  src: url('../fonts/geomanist-regular-webfont.eot');
+  src: url('../fonts/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-regular-webfont.woff2') format('woff2'), url('../fonts/geomanist-regular-webfont.woff') format('woff'), url('../fonts/geomanist-regular-webfont.ttf') format('truetype'), url('../fonts/geomanist-regular-webfont.svg#glyphicons_halflingsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'geomanistmedium';
+  src: url('../fonts/geomanist-medium-webfont.eot');
+  src: url('../fonts/geomanist-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-medium-webfont.woff2') format('woff2'), url('../fonts/geomanist-medium-webfont.woff') format('woff'), url('../fonts/geomanist-medium-webfont.ttf') format('truetype'), url('../fonts/geomanist-medium-webfont.svg#glyphicons_halflingsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'geomanistbold';
+  src: url('../fonts/geomanist-bold-webfont.eot');
+  src: url('../fonts/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-bold-webfont.woff2') format('woff2'), url('../fonts/geomanist-bold-webfont.woff') format('woff'), url('../fonts/geomanist-bold-webfont.ttf') format('truetype'), url('../fonts/geomanist-bold-webfont.svg#glyphicons_halflingsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'geomanistblack';
+  src: url('../fonts/geomanist-black-webfont.eot');
+  src: url('../fonts/geomanist-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/geomanist-black-webfont.woff2') format('woff2'), url('../fonts/geomanist-black-webfont.woff') format('woff'), url('../fonts/geomanist-black-webfont.ttf') format('truetype'), url('../fonts/geomanist-black-webfont.svg#glyphicons_halflingsregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.geomanist_light {
+  font-family: 'geomanistlight';
+  font-weight: normal;
+}
+.geomanist_regular {
+  font-family: 'geomanist_regularregular';
+  font-weight: normal;
+}
+.geomanist_medium {
+  font-family: 'geomanistmedium';
+  font-weight: normal;
+}
+.geomanist_bold {
+  font-family: 'geomanistbold';
+  font-weight: normal;
+}
+.geomanist_black {
+  font-family: 'geomanistblack';
+  font-weight: normal;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -534,6 +621,7 @@ tbody.collapse.in {
   -webkit-transition: top 300ms ease-in-out;
   -o-transition: top 300ms ease-in-out;
   transition: top 300ms ease-in-out;
+  position: fixed;
 }
 .site-header a {
   display: block;
@@ -541,12 +629,13 @@ tbody.collapse.in {
 .site-header .btn {
   font-size: inherit;
 }
-.site-header.kala_is_sticky {
+.site-header {
   top: 0;
   left: 0;
   right: 0;
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  position: fixed;
 }
 .logo {
   display: block;
@@ -650,9 +739,19 @@ tbody.collapse.in {
 .menu-search .btn-search:hover:before {
   background-color: #008bff;
 }
+.menu-search {
+  .btn-search {
+    &.hide {display: block;}
+    &.show {display: none;}
+  }
+}
 .header-search {
   display: none;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  .menu-search & {
+    display: block;
+  }
 }
 .header-search form {
   position: relative;
