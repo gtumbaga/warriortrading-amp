@@ -635,7 +635,6 @@ tbody.collapse.in {
   right: 0;
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-  position: fixed;
 }
 .logo {
   display: block;
@@ -890,3 +889,27 @@ tbody.collapse.in {
     display: none;
   }
 }
+
+
+
+/* AMP Carousel Overrides  */
+.amp-carousel-button {
+  width: 40px;
+  height: 70px;
+  cursor: pointer;
+  fill: #5398b5;
+}
+.amp-carousel-button-prev {
+  left: 0;
+  background-image: url('/images/svg/arrow-prev.svg');
+  background-size: 40px 70px;
+  background-color: transparent;
+}
+.amp-carousel-button-next {
+  fill: #5398b5;
+  right: 0;
+  background-image: url('/images/svg/arrow-next.svg');
+  background-size: 40px 70px;
+  background-color: transparent;
+}
+

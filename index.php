@@ -21,6 +21,9 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 
+
+  </head>
+  <body id="body-2018" [class]="headerSearch[headerSearchCurrentState].style">
     <amp-state id="headerSearch">
       <script type="application/json">
         {
@@ -33,8 +36,6 @@
         }
       </script>
     </amp-state>
-  </head>
-  <body id="body-2018" [class]="headerSearch[headerSearchCurrentState].style">
     <!-- Google Tag Manager (noscript) -->
     <!-- <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR3F88" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -565,18 +566,7 @@
           </div>
         </amp-carousel>
       </div>
-      <div class="arrow-navigation">
-        <div class="slider-left-arrow slick-arrow" style="display: block;">
-          <svg class="gfx-arrow-left">
-            <use xlink:href="#gfx-arrow-left-svg"></use>
-          </svg>
-        </div>
-        <div class="slider-right-arrow slick-arrow" style="display: block;">
-          <svg class="gfx-arrow-right">
-            <use xlink:href="#gfx-arrow-right-svg"></use>
-          </svg>
-        </div>
-      </div>
+      
     </section>
     <!-- New News section -->
 
