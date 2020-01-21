@@ -913,3 +913,15 @@ tbody.collapse.in {
   background-color: transparent;
 }
 
+/* Popup Modals  */
+.mentor-toggle {
+  cursor: pointer;
+}
+.lightbox {
+  background: rgba(0,0,0,0.9);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

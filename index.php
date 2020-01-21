@@ -7,6 +7,7 @@
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 
     <title>Warrior Trading | Momentum Day Trading Courses &amp; Day Trading Strategies</title>
     <link rel="canonical" href="/">
@@ -319,79 +320,100 @@
       </div>
       <div class="mentor-bios">
         <div class="mentor-container">
-          <a href="#mentor-0" data-lity>
+          <a on="tap:my-lightbox-0" class="mentor-toggle">
             <div class="mentor-photo"><amp-img src="/images/ross-round-2.png" width="200" height="200" layout="fixed"></div>
             <div class="mentor-name">Ross</div>
           </a>
-          <div id="mentor-0" class="mentor-copy lity-hide">
-            <div class="mentor-inner-container">
-              <div class="mentor-photo2"><amp-img src="/images/ross-round-2.png" width="200" height="200" layout="fixed"></div>
-              <div class="mentor-text">Ross is a full time Day Trader and the founder of Warrior Trading. He runs the Day Trading Chat Room each morning with live screen share, audio/video, and market commentary. In the afternoons he works with students in the Warrior Pro &amp; Inner Circle courses. He is primarily a long-biased trader focused on trading momentum stocks priced under $20.00.</div>
-              <div class="mentor-footer text-center">
-                <a href="https://www.facebook.com/warriortrading/" target="_blank"><span
-                      class="social s-fb"></span></a><a href="https://www.twitter.com/daytradewarrior" target="_blank"><span class="social s-tw"></span></a><a href="https://www.instagram.com/daytradewarriors/" target="_blank"><span
-                      class="social s-ig"></span></a> </div>
+          <amp-lightbox id="my-lightbox-0" layout="nodisplay">
+            <div class="lightbox" on="tap:my-lightbox-0.close" role="button" tabindex="0">
+              <div id="mentor-0" class="mentor-copy lity-hide">
+                <div class="mentor-inner-container">
+                  <div class="mentor-photo2"><amp-img src="/images/ross-round-2.png" width="200" height="200" layout="fixed"></div>
+                  <div class="mentor-text">Ross is a full time Day Trader and the founder of Warrior Trading. He runs the Day Trading Chat Room each morning with live screen share, audio/video, and market commentary. In the afternoons he works with students in the Warrior Pro &amp; Inner Circle courses. He is primarily a long-biased trader focused on trading momentum stocks priced under $20.00.</div>
+                  <div class="mentor-footer text-center">
+                    <a href="https://www.facebook.com/warriortrading/" target="_blank"><span
+                          class="social s-fb"></span></a><a href="https://www.twitter.com/daytradewarrior" target="_blank"><span class="social s-tw"></span></a><a href="https://www.instagram.com/daytradewarriors/" target="_blank"><span
+                          class="social s-ig"></span></a> </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </amp-lightbox>
+          
         </div>
         <div class="mentor-container">
-          <a href="#mentor-1" data-lity>
+          <a on="tap:my-lightbox-1" class="mentor-toggle">
             <div class="mentor-photo"><amp-img src="/images/mike-round1.png" width="200" height="200" layout="fixed"></div>
             <div class="mentor-name">Mike</div>
           </a>
-          <div id="mentor-1" class="mentor-copy lity-hide">
-            <div class="mentor-inner-container">
-              <div class="mentor-photo2"><amp-img src="/images/mike-round1.png" width="200" height="200" layout="fixed"></div>
-              <div class="mentor-text">Mike is a full time Day Trader and a trading mentor at Warrior Trading. His trading style is deeply rooted in technical analysis using daily support and resistance levels. Mike primarily trades stocks priced above $20 and trading on high relative volume due to breaking news. You will find him regularly trading stocks like Facebook, Tesla, and Twitter.
+          <amp-lightbox id="my-lightbox-1" layout="nodisplay">
+            <div class="lightbox" on="tap:my-lightbox-1.close" role="button" tabindex="0">
+              <div id="mentor-1" class="mentor-copy lity-hide">
+                <div class="mentor-inner-container">
+                  <div class="mentor-photo2"><amp-img src="/images/mike-round1.png" width="200" height="200" layout="fixed"></div>
+                  <div class="mentor-text">Mike is a full time Day Trader and a trading mentor at Warrior Trading. His trading style is deeply rooted in technical analysis using daily support and resistance levels. Mike primarily trades stocks priced above $20 and trading on high relative volume due to breaking news. You will find him regularly trading stocks like Facebook, Tesla, and Twitter.
+                  </div>
+                  <div class="mentor-footer text-center">
+                    <a href="https://www.facebook.com/Large-Caps-Warrior-Trading-203371270331502/" target="_blank"><span class="social s-fb"></span></a><a href="https://twitter.com/LargeCapWarrior" target="_blank"><span
+                          class="social s-tw"></span></a><a href="https://www.instagram.com/largecapwarriors/" target="_blank"><span class="social s-ig"></span></a> </div>
+                </div>
               </div>
-              <div class="mentor-footer text-center">
-                <a href="https://www.facebook.com/Large-Caps-Warrior-Trading-203371270331502/" target="_blank"><span class="social s-fb"></span></a><a href="https://twitter.com/LargeCapWarrior" target="_blank"><span
-                      class="social s-tw"></span></a><a href="https://www.instagram.com/largecapwarriors/" target="_blank"><span class="social s-ig"></span></a> </div>
             </div>
-          </div>
+          </amp-lightbox>
         </div>
         <div class="mentor-container">
-          <a href="#mentor-2" data-lity="">
+          <a on="tap:my-lightbox-2" class="mentor-toggle">
             <div class="mentor-photo"><amp-img src="/images/Arsh-round.png" width="200" height="200" layout="fixed"></div>
             <div class="mentor-name">Arsh</div>
           </a>
-          <div id="mentor-2" class="mentor-copy lity-hide">
-            <div class="mentor-inner-container">
-              <div class="mentor-photo2"><amp-img src="/images/Arsh-round.png" width="200" height="200" layout="fixed"></div>
-              <div class="mentor-text">In 2015, at the age of 20, Arsh began as a student in the Warrior Trading community. In a short period of time, he transitioned into a very successful options trader and community mentor. Arsh actively trades in the chat room on large cap indexes and stocks using options, and hosts weekly mentor sessions sharing his trading insights and tips.
+          <amp-lightbox id="my-lightbox-2" layout="nodisplay">
+            <div class="lightbox" on="tap:my-lightbox-2.close" role="button" tabindex="0">
+              <div id="mentor-2" class="mentor-copy lity-hide">
+                <div class="mentor-inner-container">
+                  <div class="mentor-photo2"><amp-img src="/images/Arsh-round.png" width="200" height="200" layout="fixed"></div>
+                  <div class="mentor-text">In 2015, at the age of 20, Arsh began as a student in the Warrior Trading community. In a short period of time, he transitioned into a very successful options trader and community mentor. Arsh actively trades in the chat room on large cap indexes and stocks using options, and hosts weekly mentor sessions sharing his trading insights and tips.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </amp-lightbox>
         </div>
         <div class="mentor-container">
-          <a href="#mentor-3" data-lity="">
+          <a on="tap:my-lightbox-3" class="mentor-toggle">
             <div class="mentor-photo"><amp-img src="/images/Steve-round.png" width="200" height="200" layout="fixed"></div>
             <div class="mentor-name">Steve</div>
           </a>
-          <div id="mentor-3" class="mentor-copy lity-hide">
-            <div class="mentor-inner-container">
-              <div class="mentor-photo2"><amp-img src="/images/Steve-round.png" width="200" height="200" layout="fixed"></div>
-              <div class="mentor-text">Steve is a veteran Futures Trader who brings nearly two decades of trading industry experience to the Warrior Trading community. He is a savvy technical trader with an expertise in Market Profile. His enthusiasm for trading is contagious and he loves teaching his favorite strategies to traders eager to learn.</div>
-              <div class="mentor-footer text-center">
-                <a href="https://www.facebook.com/futureswarriors/" target="_blank"><span
-                      class="social s-fb"></span></a><a href="https://twitter.com/futureswarriors" target="_blank"><span class="social s-tw"></span></a><a href="https://www.instagram.com/futureswarriors/" target="_blank"><span
-                      class="social s-ig"></span></a> </div>
+          <amp-lightbox id="my-lightbox-3" layout="nodisplay">
+            <div class="lightbox" on="tap:my-lightbox-3.close" role="button" tabindex="0">
+              <div id="mentor-3" class="mentor-copy lity-hide">
+                <div class="mentor-inner-container">
+                  <div class="mentor-photo2"><amp-img src="/images/Steve-round.png" width="200" height="200" layout="fixed"></div>
+                  <div class="mentor-text">Steve is a veteran Futures Trader who brings nearly two decades of trading industry experience to the Warrior Trading community. He is a savvy technical trader with an expertise in Market Profile. His enthusiasm for trading is contagious and he loves teaching his favorite strategies to traders eager to learn.</div>
+                  <div class="mentor-footer text-center">
+                    <a href="https://www.facebook.com/futureswarriors/" target="_blank"><span
+                          class="social s-fb"></span></a><a href="https://twitter.com/futureswarriors" target="_blank"><span class="social s-tw"></span></a><a href="https://www.instagram.com/futureswarriors/" target="_blank"><span
+                          class="social s-ig"></span></a> </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </amp-lightbox>
         </div>
         <div class="mentor-container">
-          <a href="#mentor-4" data-lity="">
+          <a on="tap:my-lightbox-4" class="mentor-toggle">
             <div class="mentor-photo"><amp-img src="/images/Roberto-round.png" width="200" height="200" layout="fixed"></div>
             <div class="mentor-name">Roberto</div>
           </a>
-          <div id="mentor-4" class="mentor-copy lity-hide">
-            <div class="mentor-inner-container">
-              <div class="mentor-photo2"><amp-img src="/images/Roberto-round.png" width="200" height="200" layout="fixed"></div>
-              <div class="mentor-text">Roberto began his career transitioning from a completely different industry. After becoming a Warrior Trading student, he was able to get back to Italy and travel the world thanks to his trading results. In order to help others achieve their dreams as well, he is now teaching his own strategies through weekly mentor sessions.</div>
-              <div class="mentor-footer text-center">
+          <amp-lightbox id="my-lightbox-4" layout="nodisplay">
+            <div class="lightbox" on="tap:my-lightbox-4.close" role="button" tabindex="0">
+              <div id="mentor-4" class="mentor-copy lity-hide">
+                <div class="mentor-inner-container">
+                  <div class="mentor-photo2"><amp-img src="/images/Roberto-round.png" width="200" height="200" layout="fixed"></div>
+                  <div class="mentor-text">Roberto began his career transitioning from a completely different industry. After becoming a Warrior Trading student, he was able to get back to Italy and travel the world thanks to his trading results. In order to help others achieve their dreams as well, he is now teaching his own strategies through weekly mentor sessions.</div>
+                  <div class="mentor-footer text-center">
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </amp-lightbox>
         </div>
       </div>
       <div class="thick-rule"></div>
