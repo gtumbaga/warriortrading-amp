@@ -171,7 +171,9 @@
       </div>
     </header>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<amp-lightbox id="myLBModal" layout="nodisplay">
+  <div class="lightbox" on="tap:myLBModal.close" role="button" tabindex="0">
+    <div class="modal fade in" id="myModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog elegance-webinar-dialog">
         <div class="modal-content elegance-webinar-content">
           <button class="elegance-webinar-close" data-dismiss="modal">×</button>
@@ -216,6 +218,8 @@
         </div>
       </div>
     </div>
+  </div>
+</amp-lightbox>
 
     <section class="video-section">
       <div class="video-spacer"></div>
@@ -252,7 +256,7 @@
           <div class="workshop-button">
             <div style="margin:auto;width:300px;">
               <div class="embedded-joinwebinar-button">
-                <button type="button" class="btn btn-default css3button btn-webinar" title="regpopbox_169105139238453840_075cecae17">
+                <button type="button" class="btn btn-default css3button btn-webinar" on="tap:myLBModal">
                   <span>Reserve Seat</span>
                 </button>
               </div>
